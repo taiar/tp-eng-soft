@@ -6,6 +6,7 @@ import Entidades.Atores.Recepcionista;
 import Entidades.Clinico.Prontuario.DadosProntuario;
 
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class Consulta {
 
@@ -23,7 +24,7 @@ public class Consulta {
     private Boolean aconteceu;
 
     // Data em que a consulta havia sido marcada.
-    private Date dataMarcacao;
+    private GregorianCalendar dataMarcacao;
 
     // Dados do paciente nesta consulta.
     private DadosProntuario dados;
@@ -60,11 +61,11 @@ public class Consulta {
         this.aconteceu = aconteceu;
     }
 
-    public Date getDataMarcacao() {
+    public GregorianCalendar getDataMarcacao() {
         return dataMarcacao;
     }
 
-    public void setDataMarcacao(Date dataMarcacao) {
+    public void setDataMarcacao(GregorianCalendar dataMarcacao) {
         this.dataMarcacao = dataMarcacao;
     }
 
