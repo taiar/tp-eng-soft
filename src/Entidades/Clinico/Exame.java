@@ -18,9 +18,11 @@ public class Exame {
     // Laboratório que efetuou o exame.
     private Laboratorio laboratorio;
 
+    // Médico pode decidir se o exame pode ser disponibilizado online para paciente.
+    private Boolean disponibilizadoOnLine;
+
     /**
      * Estado em que o exame se encontra.
-     *
      * @see EstadosExame
      */
     private EstadosExame estado;
@@ -110,5 +112,13 @@ public class Exame {
 
     public void setDataEntreguePaciente(GregorianCalendar dataEntreguePaciente) {
         this.dataEntreguePaciente = dataEntreguePaciente;
+    }
+
+    public Boolean isDisponibilizadoOnLine() {
+        return disponibilizadoOnLine;
+    }
+
+    public void setDisponibilizadoOnLine(Boolean disponibilizadoOnLine) {
+        this.disponibilizadoOnLine = disponibilizadoOnLine;
     }
 }

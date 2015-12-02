@@ -1,11 +1,13 @@
 package Controladores;
 
+import Controladores.Excessoes.AcessoNegadoException;
 import Entidades.Atores.Laboratorio;
 import Entidades.Atores.Medico;
 import Entidades.Atores.Paciente;
 import Entidades.Clinico.EstadosExame;
 import Entidades.Clinico.Exame;
 
+import java.nio.file.AccessDeniedException;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
@@ -77,6 +79,34 @@ public class ExamesController {
     public void entregarExameAoPaciente(Exame exame, GregorianCalendar calendario) {
         exame.setEstado(EstadosExame.EntregueAoPaciente);
         exame.setDataEntreguePaciente(calendario);
+    }
+
+    /**
+     * Médico pode disponibilizar o exame de um paciente para consulta online.
+     * @param exame Exame
+     */
+    public void dispobibilizaExameOnline(Exame exame) {
+        exame.setDisponibilizadoOnLine(true);
+    }
+
+    /**
+     * Paciente pode consultar um exame disponível online.
+     * @param paciente Paciente
+     * @param exame Exame
+     * @param chaveFornecida String
+     * @return Exame
+     * @throws AcessoNegadoException
+     */
+    public Exame consultaExameOnLine(Paciente paciente, Exame exame, String chaveFornecida) throws AcessoNegadoException {
+        if(exame.isDisponibilizadoOnLine()) {
+            if(paciente.getChaveUnica().equals(chaveFornecida)) {
+                return exame;
+            } else {
+                throw new AcessoNegadoException("A chave fornecida não corresponde.");
+            }
+        } else {
+            throw new AcessoNegadoException("Este exame não está autorizado para visualização online");
+        }
     }
 
 }
