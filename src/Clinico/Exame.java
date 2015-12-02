@@ -1,14 +1,17 @@
 package Clinico;
 
+import Atores.Laboratorio;
 import Atores.Medico;
 import Atores.Paciente;
 
 import java.util.Date;
 
-public class Exames {
+public class Exame {
 
     private Paciente paciente;
-    private Medico atendente;
+    private Medico requisitante;
+    private Laboratorio laboratorio;
+    private EstadosExame estado;
 
     // Data em que foi realizado o pedido do exame.
     private Date dataPedido;
@@ -17,7 +20,12 @@ public class Exames {
     private Date dataRealizacao;
 
     // Data em que o exame foi armazenado na clinica.
-    private Date dataEntrega;
+    private Date dataRecebimento;
+
+    private Date dataArquivamento;
+
+    private Date dataEntreguePaciente;
+
 
 
 }
