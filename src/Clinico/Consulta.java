@@ -28,4 +28,51 @@ public class Consulta {
     // Dados do paciente nesta consulta.
     private DadosProntuario dados;
 
+    public Recepcionista getAgendador() {
+        return agendador;
+    }
+
+    public void setAgendador(Recepcionista agendador) {
+        this.agendador = agendador;
+    }
+
+    public Paciente getAtendido() {
+        return atendido;
+    }
+
+    public void setAtendido(Paciente atendido) {
+        this.atendido = atendido;
+    }
+
+    public Medico getAtendente() {
+        return atendente;
+    }
+
+    public void setAtendente(Medico atendente) {
+        this.atendente = atendente;
+    }
+
+    public Boolean isAconteceu() {
+        return aconteceu;
+    }
+
+    public void setAconteceu(Boolean aconteceu) {
+        this.aconteceu = aconteceu;
+    }
+
+    public Date getDataMarcacao() {
+        return dataMarcacao;
+    }
+
+    public void setDataMarcacao(Date dataMarcacao) {
+        this.dataMarcacao = dataMarcacao;
+    }
+
+    public DadosProntuario getDados() {
+        return dados;
+    }
+
+    public void setDados(DadosProntuario dados) {
+        this.dados = dados;
+    }
 }

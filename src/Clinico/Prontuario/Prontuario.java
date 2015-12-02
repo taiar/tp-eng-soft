@@ -3,6 +3,7 @@ package Clinico.Prontuario;
 import Atores.Paciente;
 import Clinico.Consulta;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,4 +18,23 @@ public class Prontuario {
     // Todos os registros de consulta deste paciente.
     private List<Consulta> consultas;
 
+    public Prontuario() {
+        this.consultas = new ArrayList<Consulta>();
+    }
+
+    public Paciente getPaciente() {
+        return paciente;
+    }
+
+    public void setPaciente(Paciente paciente) {
+        this.paciente = paciente;
+    }
+
+    public List<Consulta> getConsultas() {
+        return consultas;
+    }
+
+    public void addConsulta(Consulta consulta) {
+        this.consultas.add(consulta);
+    }
 }

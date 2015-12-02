@@ -3,6 +3,7 @@ package Atores;
 import Clinico.Exame;
 import Clinico.Prontuario.Prontuario;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Paciente extends Pessoa {
@@ -16,4 +17,31 @@ public class Paciente extends Pessoa {
     // Exames deste paciente.
     private List<Exame> exames;
 
+    public Paciente() {
+        this.exames = new ArrayList<Exame>();
+    }
+
+    public String getChaveUnica() {
+        return chaveUnica;
+    }
+
+    public void setChaveUnica(String chaveUnica) {
+        this.chaveUnica = chaveUnica;
+    }
+
+    public Prontuario getHistorico() {
+        return historico;
+    }
+
+    public void setHistorico(Prontuario historico) {
+        this.historico = historico;
+    }
+
+    public List<Exame> getExames() {
+        return exames;
+    }
+
+    public void addExame(Exame exame) {
+        this.exames.add(exame);
+    }
 }

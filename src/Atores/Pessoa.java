@@ -3,6 +3,7 @@ package Atores;
 import DadosGerais.Endereco;
 import DadosGerais.Telefone;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Pessoa {
@@ -19,4 +20,39 @@ public abstract class Pessoa {
     // Telefones que a pessoa tem.
     private List<Telefone> telefones;
 
+    public Pessoa() {
+        this.telefones = new ArrayList<Telefone>();
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
+    public List<Telefone> getTelefones() {
+        return telefones;
+    }
+
+    public void setTelefones(List<Telefone> telefones) {
+        this.telefones = telefones;
+    }
 }
