@@ -1,7 +1,7 @@
-package Atores;
+package Entidades.Atores;
 
-import DadosGerais.Endereco;
-import DadosGerais.Telefone;
+import Entidades.DadosGerais.Endereco;
+import Entidades.DadosGerais.Telefone;
 
 import java.util.ArrayList;
 import java.util.List;

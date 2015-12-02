@@ -1,4 +1,4 @@
-package Clinico.Prontuario;
+package Entidades.Clinico.Prontuario;
 
 public class DadosProntuario {
 

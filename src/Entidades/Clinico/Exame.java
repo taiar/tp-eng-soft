@@ -1,10 +1,11 @@
-package Clinico;
+package Entidades.Clinico;
 
-import Atores.Laboratorio;
-import Atores.Medico;
-import Atores.Paciente;
+import Entidades.Atores.Laboratorio;
+import Entidades.Atores.Medico;
+import Entidades.Atores.Paciente;
 
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class Exame {
 
@@ -25,19 +26,19 @@ public class Exame {
     private EstadosExame estado;
 
     // Data em que foi realizado o pedido do exame.
-    private Date dataPedido;
+    private GregorianCalendar dataPedido;
 
     // Data em que o exame foi realizado.
-    private Date dataRealizacao;
+    private GregorianCalendar dataRealizacao;
 
     // Data em que o exame foi recebido na clínica.
-    private Date dataRecebimento;
+    private GregorianCalendar dataRecebimento;
 
     // Data em que o exame fora arquivado na clínica (caso tenha sido).
-    private Date dataArquivamento;
+    private GregorianCalendar dataArquivamento;
 
     // Data em que o exame fora entregue ao paciente (caso tenha sido).
-    private Date dataEntreguePaciente;
+    private GregorianCalendar dataEntreguePaciente;
 
     public Paciente getPaciente() {
         return paciente;
@@ -71,43 +72,43 @@ public class Exame {
         this.estado = estado;
     }
 
-    public Date getDataPedido() {
+    public GregorianCalendar getDataPedido() {
         return dataPedido;
     }
 
-    public void setDataPedido(Date dataPedido) {
+    public void setDataPedido(GregorianCalendar dataPedido) {
         this.dataPedido = dataPedido;
     }
 
-    public Date getDataRealizacao() {
+    public GregorianCalendar getDataRealizacao() {
         return dataRealizacao;
     }
 
-    public void setDataRealizacao(Date dataRealizacao) {
+    public void setDataRealizacao(GregorianCalendar dataRealizacao) {
         this.dataRealizacao = dataRealizacao;
     }
 
-    public Date getDataRecebimento() {
+    public GregorianCalendar getDataRecebimento() {
         return dataRecebimento;
     }
 
-    public void setDataRecebimento(Date dataRecebimento) {
+    public void setDataRecebimento(GregorianCalendar dataRecebimento) {
         this.dataRecebimento = dataRecebimento;
     }
 
-    public Date getDataArquivamento() {
+    public GregorianCalendar getDataArquivamento() {
         return dataArquivamento;
     }
 
-    public void setDataArquivamento(Date dataArquivamento) {
+    public void setDataArquivamento(GregorianCalendar dataArquivamento) {
         this.dataArquivamento = dataArquivamento;
     }
 
-    public Date getDataEntreguePaciente() {
+    public GregorianCalendar getDataEntreguePaciente() {
         return dataEntreguePaciente;
     }
 
-    public void setDataEntreguePaciente(Date dataEntreguePaciente) {
+    public void setDataEntreguePaciente(GregorianCalendar dataEntreguePaciente) {
         this.dataEntreguePaciente = dataEntreguePaciente;
     }
 }

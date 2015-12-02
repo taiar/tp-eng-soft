@@ -1,7 +1,7 @@
-package Atores;
+package Entidades.Atores;
 
-import Clinico.Exame;
-import DadosGerais.Endereco;
+import Entidades.Clinico.Exame;
+import Entidades.DadosGerais.Endereco;
 
 import java.util.ArrayList;
 import java.util.List;

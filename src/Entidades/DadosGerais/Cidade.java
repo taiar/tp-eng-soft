@@ -1,4 +1,4 @@
-package DadosGerais;
+package Entidades.DadosGerais;
 
 public class Cidade {
 

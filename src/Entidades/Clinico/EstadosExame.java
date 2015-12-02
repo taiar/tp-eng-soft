@@ -1,4 +1,4 @@
-package Clinico;
+package Entidades.Clinico;
 
 /**
  * Enumeração destinada a guardar o estado do exame.

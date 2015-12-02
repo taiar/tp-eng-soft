@@ -1,7 +1,7 @@
-package Clinico.Prontuario;
+package Entidades.Clinico.Prontuario;
 
-import Atores.Paciente;
-import Clinico.Consulta;
+import Entidades.Atores.Paciente;
+import Entidades.Clinico.Consulta;
 
 import java.util.ArrayList;
 import java.util.List;

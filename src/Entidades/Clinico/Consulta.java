@@ -1,9 +1,9 @@
-package Clinico;
+package Entidades.Clinico;
 
-import Atores.Medico;
-import Atores.Paciente;
-import Atores.Recepcionista;
-import Clinico.Prontuario.DadosProntuario;
+import Entidades.Atores.Medico;
+import Entidades.Atores.Paciente;
+import Entidades.Atores.Recepcionista;
+import Entidades.Clinico.Prontuario.DadosProntuario;
 
 import java.util.Date;
 

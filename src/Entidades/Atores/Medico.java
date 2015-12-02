@@ -1,4 +1,4 @@
-package Atores;
+package Entidades.Atores;
 
 public class Medico extends Pessoa {
 
